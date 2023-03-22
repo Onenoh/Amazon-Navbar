@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Amazon</title>
+    <style>
+      .btn{
+        margin-left:0;
+        border: 1px solid transparent;
+        background-color: transparent;
+      }
+      .btn:hover{
+        background: transparent;
+        border: 1px solid #F3F3F3;
+        border-radius: 2px;
+
+
+      }
+      #geo{
+        margin-top: 18px;
+      }
+      .navbar-text{
+        margin-left: 20px;
+        color: #F3F3F3;
+      }
+      form{
+        z-index: 0;
+      }
+      .d-flex input{
+        width: 400px;
+        height: 45px;
+        position: relative;
+      }
+      .d-flex button{
+        position: absolute;
+        right: 493px;
+        height: 45px;
+        width: 50px;
+        border: 0;
+        border-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #FEBD69
+      }
+      .collapse .new{
+        position: relative;
+        left: 30px;
+        z-index: 1;
+        width: 60px;
+        height: 45px;
+        border: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: #F3F3F3;
+        color: grey;
+        border-right: 1px solid;
+      }
+      .navbar-text{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+      }
+      .form-control{
+        text-indent: 10px;
+        color: darkgrey;
+      }
+      .spand{
+        font-size: 13px;
+        color: #F3F3F3;
+        text-align: center;
+      }
+      #pan{
+        margin-left: 70px;
+      }
+      #group{
+        margin-top: 100px;
+        
+       
+      }
+      #and{
+        float: left;
+        width: 60px;
+        margin-right: 50px;
+      }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <span>
+      <a class="navbar-brand me-0" href="#"><img src="Amazon.png" alt="Amazon" width="100" height="30"></a>
+    </span>
+    <div class="navbar-text"><svg id="geo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+    </svg><span>Delivery to<br><h6>Nigeria</h6></span></div>
+    <button class="navbar-toggler btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button class="new btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              All
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search Amazon" aria-label="Search">
+        <button class=" btn-outline-*" type="submit"><img src="search-icon-png-5.png" alt="" width="70%" height="60%"></button>
+      </form>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button id="pan" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="american-flag-logo-png-4.png" alt="" width="25" height="25">
+             <span class="spand"><strong>EN</strong></span> 
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <span id="and" class="spand">Hello, Sign in<br><h6>Account & Lists</h6></span> 
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><span class="spand">Returns <br> <h6> & Orders</h6></span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><img src="Group 1.png" alt="" width="35" height="35" margin-top="60"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"></a><span class="spand"><h6>Cart</h6></span></a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+</body>
+</html>
